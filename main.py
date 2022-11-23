@@ -142,7 +142,7 @@ async def message_handler(event):
         message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
         newbutton = [Button.url('Join Updates Channel ✅',
-                                    f'https://t.me/cynitemovies')]
+                                    f'https://t.me/Bollywoodmovies786movies')]
 
         await txt.delete()
         await asyncio.sleep(0.5)
