@@ -9,7 +9,7 @@ import os
 class Config(object):
     API_ID = int(os.getenv("API_ID", "29480852"))
     API_HASH = os.getenv("API_HASH", "ff780de65ba39940c7b1cd4f76f154b2")
-    BOT_TOKEN = os.getenv("BOT_TOKEN", "5497795663:AAHVnOyVsZ5baKIZI2lLOytAoWqPtKDy0zU")
+    BOT_TOKEN = os.getenv("BOT_TOKEN", "5936961519:AAENCFHhsBqkjp-VEJ6_lMCC8rzp9jpj96o")
     BOT_SESSION_NAME = os.getenv("BOT_SESSION_NAME", "nikhiksearchbot")
     USER_SESSION_STRING = os.getenv("USER_SESSION_STRING", "1BVtsOJsBuymhI0S3NuYW_VG2xhp0KJm3Kweu42cJsp-Pl4MOIQg9z7bztvnbAKeb1jL0c9uBA5kR2zxIByNARpk-bXEIBTJ7-QkPS1BAheCqejf0LsUr9VbA3OzRcEsbUoFkwciQJb9jtneH18oGfTYfjLbPYpxDh_ylfD1EKbPaL9pNViBwzJT20OE7zBP8z0op7DEc7XKdUkzGSTxN8S9k2pjY_FQex_yasseMENbK4UfAENjCoAtgDmW4wlwuyetybTtQXbTM7292O1FHB5CtvDWTCf5uXMAh9TXHFZ7eiDTgLPyYgZ2NI6ME0eOUGigX3ALQgDVzg4EyU1RO-GXCtB7Wfg0=")
     CHANNEL_ID = int(os.getenv("CHANNEL_ID", "-1001780474435"))
