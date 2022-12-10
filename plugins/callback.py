@@ -141,23 +141,6 @@ async def button(bot, cmd: CallbackQuery):
             ),
             parse_mode="html"
         )
-        elif "Watch_msg" in cb_data:
-            await cmd.message.edit(
-            text=Config.ABOUT_WATCH_TEXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ], 
-                                        [
-                        InlineKeyboardButton("About", callback_data="About_msg"),
-                        InlineKeyboardButton('Watch Tutorial', url='https://youtu.be/34IlfsamU6Q')
-                    ]
-                ]
-            ),
-            parse_mode="html"
-        )
         elif "remove_api" in cb_data:
             _, group_id = cb_data.split("#")
             await db.remove_user_api(int(group_id))
