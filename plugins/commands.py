@@ -1,6 +1,6 @@
 from datetime import datetime
 from configs import Config
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from TeamTeleRoid.database import db
 
@@ -17,7 +17,35 @@ async def help_handler(_, event: Message):
              InlineKeyboardButton("Help", callback_data="Help_msg")
              ]
         ])
-    )                        
+    )   
+                     
+@Client.on_message(filters.command('id'))
+ def showid(client, message):
+    chat_type = message.chat.type
+    if chat_type == enums.ChatType.PRIVATE:
+        user_id = message.chat.id
+        first = message.from_user.first_name
+        last = message.from_user.last_name or ""
+        username = message.from_user.username
+        dc_id = message.from_user.dc_id or ""
+        await message.reply_text(
+            f"<b>➲ First Name:</b> {first}\n<b>➲ Last Name:</b> {last}\n<b>➲ Username:</b> {username}\n<b>➲ Telegram ID:</b> <code>{user_id}</code>\n<b>➲ Data Centre:</b> <code>{dc_id}</code>",
+            quote=True
+        )
+
+    elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+        _id = ""
+        _id += (
+            "<b>➲ Chat ID</b>: "
+            f"<code>{message.chat.id}</code>\n"
+        )
+        if message.reply_to_message:
+            _id += (
+                "<b>➲ User ID</b>: "
+                f"<code>{message.from_user.id if message.from_user else 'Anonymous'}</code>\n"
+                "<b>➲ Replied User ID</b>: "
+                f"<code>{message.reply_to_message.from_user.id if message.reply_to_message.from_user else 'Anonymous'}</code>\n"
+            )
 
 @Client.on_message(filters.command('leave') & filters.private &  filters.chat(Config.BOT_OWNER))
 async def leave_a_chat(bot, message):
