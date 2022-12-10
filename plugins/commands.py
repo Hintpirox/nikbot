@@ -20,8 +20,6 @@ async def help_handler(_, event: Message):
     )   
                      
 @Client.on_message(filters.command('id'))
- def showid(client, message):
-    chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
         user_id = message.chat.id
         first = message.from_user.first_name
