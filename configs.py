@@ -11,7 +11,8 @@ class Config(object):
     API_HASH = os.getenv("API_HASH", "ff780de65ba39940c7b1cd4f76f154b2")
     BOT_TOKEN = os.getenv("BOT_TOKEN", "5936961519:AAENCFHhsBqkjp-VEJ6_lMCC8rzp9jpj96o")
     BOT_SESSION_NAME = os.getenv("BOT_SESSION_NAME", "nikhiksearchbot")
-    USER_SESSION_STRING = os.getenv("USER_SESSION_STRING", "1BVtsOMcBu2nw-65io-Qpvwi0gwLz1RDWLE-2pc77EDF2kLqL_u2IDsgTJABbuLHf8_rAtFsg5_y5udjqq6pgApi2HghOZij6IrwZpWbwNKCVaElYKPZVE4IFEH2Q0WtrmkYwP8UawzowjLdR6EQRAIZCr4z_8k1h7ilwsjomVY50ufhKJYtc20BgnJvpmYwSmrWWT7HDzPEpkyjXBszKIckYFyPUizvlFabQlwLYa5S_6IjmGli3Np8hLsytikVeXsPtJgbScM31BwSfMC9B-2ywSIiQQUAj4eEy1ta0IvxH4d5BdXfUC7PkBHHfx9PwEJqcog2UZ3Da9VRjek_ySnYRNBloynE=")
+    USER_SESSION_STRING = os.getenv("USER_SESSION_STRING", "1BVtsOMcBu2nw-65io-Qpvwi0gwLz1RDWLE-2pc77EDF2kLqL_u2IDsgTJABbuLHf8_rAtFsg5_y5udjqq6pgApi2HghOZij6IrwZpWbwNKCVaElYKPZVE4IFEH2Q0WtrmkYwP8UawzowjLdR6EQRAIZCr4z_8k1h7ilwsjomVY50ufhKJYtc20BgnJvpmYwSmrWWT7HDzPEpkyjXBszKIckYFyPUizvlFabQlwLYa5S_6IjmGli3Np8hLsytikVeXsPtJgbScM31BwSfMC9B-2ywSIiQQUAj4eEy1ta0IvxH4d5BdXfUC7PkBHHfx9PwEJqcog2UZ3Da9VRjek_ySnYRNBloynE=
+")
     CHANNEL_ID = int(os.getenv("CHANNEL_ID", "-1001780474435"))
     BOT_USERNAME = os.getenv("BOT_USERNAME", "Aa_mviesbot")
     BOT_OWNER = int(os.getenv("BOT_OWNER", "1919794289"))
