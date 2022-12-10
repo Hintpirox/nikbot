@@ -118,7 +118,7 @@ async def button(bot, cmd: CallbackQuery):
             ], 
                                         [
                         InlineKeyboardButton("About", callback_data="About_msg"),
-                        InlineKeyboardButton('Watch Tutorial', url='https://youtu.be/34IlfsamU6Q')
+                        InlineKeyboardButton('Watch Tutorial', callback_data="Watch_msg")
                     ]
                 ]
             ),
@@ -141,7 +141,7 @@ async def button(bot, cmd: CallbackQuery):
             ),
             parse_mode="html"
         )
-        elif "watch_msg" in cb_data:
+        elif "Watch_msg" in cb_data:
             await cmd.message.edit(
             text=Config.ABOUT_WATCH_TEXT,
             disable_web_page_preview=True,
