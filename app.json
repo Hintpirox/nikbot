@@ -8,7 +8,7 @@
         "search",
         "bot"
     ],
-    "repository": "https://github.com/RoyalKrrishna/MessageSearchBot",
+    "repository": "https://github.com/Hintpirox/nikbot",
     "website": "https://telegram.dog/RoyalKrrishna",
     "success_url": "https://t.me/mdisksearchroBot",
     "env": {
@@ -100,4 +100,4 @@
             "url": "heroku/python"
         }
     ],
-}
+
