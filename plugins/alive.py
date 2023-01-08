@@ -36,7 +36,7 @@ async def restart(client, m: Message):
     )
     await asyncio.sleep(0.1)
     await m.reply_photo(
-        random.choice(PHOTO),
+        random.choice(https://telegra.ph/file/61a90c3d61fc457fa9ef5.jpg),
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ Mdisk Search Bot**
      ▱▱▱▱▱▱▱▱▱▱▱▱
 » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴄʟɪᴄᴋ ᴍᴇ](https://t.me/Cyniteofficial)
